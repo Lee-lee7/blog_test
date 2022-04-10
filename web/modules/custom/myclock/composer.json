@@ -1,0 +1,12 @@
+{
+  "name": "drupal/mtc",
+  "description": "Set multiple clock based on time zone",
+  "type": "drupal-module",
+  "authors": [
+    {
+      "name": "Rohit Rajput (rohit-rajput-sahab)",
+      "homepage": "https://www.drupal.org/u/rohit-rajput-sahab",
+      "role": "Maintainer"
+    }
+  ]
+}

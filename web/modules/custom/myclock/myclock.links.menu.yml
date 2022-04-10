@@ -1,0 +1,5 @@
+myclock.admin:
+  title: 'Configure My Clock'
+  description: 'Set and configure multiple timezone clock.'
+  route_name: myclock.admin
+  parent: system.admin_config_content

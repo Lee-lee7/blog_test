@@ -1,0 +1,7 @@
+myclock.admin:
+  path: '/admin/config/my_clock'
+  defaults:
+    _form: '\Drupal\myclock\Form\MyClockForm'
+    _title: 'My Clock Form'
+  requirements:
+    _permission: 'my_clock_permissions'

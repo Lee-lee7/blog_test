@@ -1,0 +1,11 @@
+name: 'My Clock'
+type: module
+description: 'Set multiple clock based on time zone.'
+package: Custom
+core_version_requirement: ^8 || ^9
+configure: myclock.admin
+
+# Information added by Drupal.org packaging script on 2021-11-06
+version: '1.0.5'
+project: 'myclock'
+datestamp: 1636211315

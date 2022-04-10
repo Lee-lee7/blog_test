@@ -1,0 +1,394 @@
+// Sub theme styling.
+@import "variables_drupal";
+// Bootstrap overriden variables.
+// @see https://getbootstrap.com/docs/5.1/customize/sass/#variable-defaults.
+@import "variables_bootstrap";
+// Include bootstrap.
+@import "../../../../themes/contrib/bootstrap5/scss/style";
+body {
+    background-image: url(../img/back.png);
+    background-position-x: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    backdrop-filter: brightness(0.6);
+}
+
+header {
+    backdrop-filter: brightness(0.6);
+    .region-nav-branding {
+        width: 270px;
+        margin: 0 auto;
+    }
+    .navbar>.container {
+        display: block;
+    }
+    .site-logo {
+        text-align: center;
+        margin-top: calc(50% - 40px / 2 - 40px);
+        img {
+            width: 176px;
+            height: 40px;
+        }
+    }
+    .site-title {
+        display: none;
+    }
+}
+
+.navbar-nav {
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 40px;
+    li {
+        font-family: "Montserrat";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 14px;
+        letter-spacing: 1.3px;
+        text-transform: uppercase;
+        position: relative;
+        a {
+            color: #ffffff !important;
+        }
+        .is-active:after {
+            left: 0;
+            right: 0;
+            position: absolute;
+            content: "";
+            height: 3px;
+            top: 50px;
+            width: 90%;
+            margin: 0 auto;
+            background: rgba(255, 255, 255, 0.3);
+        }
+    }
+}
+
+main {
+    backdrop-filter: brightness(0.6);
+}
+
+#block-subtheme-content {
+    margin-top: 80px;
+}
+
+.layout__region--content {
+    position: relative;
+    background-color: white;
+    .block-field-blocknodearticlefield-tags {
+        position: absolute;
+        right: 20px;
+        top: 20px;
+        font-family: "Montserrat";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 24px;
+        padding-right: 10px;
+        padding-left: 10px;
+        /* identical to box height, or 300% */
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        background: rgba(0, 0, 0, 0.2);
+        border-radius: 30px;
+        a {
+            color: #ffffff;
+            text-decoration: none;
+        }
+    }
+}
+
+.node--view-mode-teaser {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+article {
+    h2 {
+        display: none;
+    }
+    .block-field-blockuseruseruser-picture {
+        position: absolute;
+        top: 160px;
+        left: 40px;
+    }
+    .block-field-blocknodearticlecreated {
+        position: absolute;
+        top: 180px;
+        left: 90px;
+        font-family: "Lato";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 19px;
+        /* identical to box height, or 146% */
+        color: #ffffff;
+    }
+    .block-field-blocknodearticleuid {
+        position: absolute;
+        top: 160px;
+        left: 90px;
+        font-family: "Montserrat";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 19px;
+        /* identical to box height, or 106% */
+        a {
+            text-decoration: none;
+            color: #ffffff;
+            text-transform: capitalize;
+        }
+    }
+    .block-field-blocknodearticlebody {
+        font-family: "Lato";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 25px;
+        /* or 139% */
+        color: #333333;
+        padding: 40px;
+        padding-bottom: 0px;
+    }
+    .block-extra-field-blocknodearticlelinks {
+        margin-bottom: -10px;
+        padding-bottom: 20px;
+        a {
+            font-family: "Lato";
+            font-style: normal;
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 30px;
+            /* identical to box height, or 176% */
+            padding-left: 30px;
+            color: #8d4fdb;
+            position: relative;
+            &::after {
+                right: -20px;
+                position: absolute;
+                content: "\2192";
+            }
+        }
+    }
+    .field--name-title {
+        position: absolute;
+        top: 220px;
+        left: 40px;
+        font-family: "Montserrat";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 30px;
+        line-height: 35px;
+        /* or 125% */
+        color: #ffffff;
+        padding-right: 38%;
+    }
+}
+
+#block-readmore {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+    background: #f1f1f1;
+    height: 211px;
+    margin-top: -6px;
+    margin-bottom: 80px;
+    h1 {
+        font-family: "Montserrat" !important;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 30px;
+        line-height: 36px;
+        /* identical to box height, or 120% */
+        text-align: center;
+        color: #333333;
+        padding-top: 50px;
+    }
+    h5 {
+        margin-top: 30px;
+        a {
+            font-family: "Montserrat";
+            font-style: normal;
+            font-weight: 400;
+            font-size: 10px;
+            line-height: 30px;
+            /* identical to box height, or 300% */
+            text-align: center;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            color: #ffffff;
+            text-decoration: none;
+            padding-right: 25px;
+            padding-left: 25px;
+            background: #8d4fdb;
+            border-radius: 3px;
+            padding-top: 15px;
+            padding-bottom: 15px;
+        }
+    }
+}
+
+.post_content {
+    background-color: white;
+}
+
+.region-post-content {
+    h2 {
+        display: none;
+    }
+    max-width: 940px;
+    margin: 0 auto;
+    .views-row {
+        display: flex;
+        justify-content: center;
+        background-color: white;
+    }
+    .views-col {
+        width: 33% !important;
+        background-color: white;
+    }
+    .block-field-blockuseruseruser-picture {
+        top: 125px;
+        left: 20px;
+    }
+    .block-field-blocknodearticleuid {
+        top: 130px;
+        left: 70px;
+    }
+    .block-field-blocknodearticlecreated {
+        top: 150px;
+        left: 70px;
+    }
+    .block-extra-field-blocknodearticlelinks {
+        display: none;
+    }
+    .field--name-title {
+        font-family: "Montserrat";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 28px;
+        /* or 156% */
+        color: #000000;
+        padding: 0px;
+        margin-left: -35px;
+        padding-right: 40px;
+        margin-top: -10px;
+    }
+}
+
+#block-stories {
+    margin-top: 80px;
+    text-align: center;
+    margin-bottom: 40px;
+    h1 {
+        font-family: "Montserrat";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 40px;
+        line-height: 40px;
+        /* identical to box height, or 100% */
+        text-align: center;
+        color: #333333;
+    }
+    h5 {
+        font-family: "Lato";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 23px;
+        line-height: 33px;
+        /* identical to box height, or 143% */
+        text-align: center;
+        color: #a9afb3;
+    }
+}
+
+#block-linkblog {
+    text-align: center;
+    margin-top: 160px;
+    .field--name-body {
+        display: flex;
+        justify-content: center;
+        h5 {
+            padding-right: 20px;
+        }
+        h6 {
+            margin-top: 1px;
+            font-size: 19px;
+            a {
+                text-decoration: none;
+                color: #8d4fdb;
+            }
+        }
+    }
+}
+
+.iwa {
+    li {
+        margin: 20px;
+    }
+    //  li::after {
+    //     content: "->";
+    // //    position: absolute;
+    // }
+}
+
+.page--pages {
+    margin-top: 50px;
+    .region-sidebar-second {
+        li::marker {
+            unicode-bidi: U+02713;
+        }
+    }
+}
+
+.field--name-field-image :hover {
+    img {
+        -webkit-box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.4);
+        -moz-box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.4);
+        box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.4);
+        display: block;
+    }
+    .site-logo {
+        -webkit-transform: perspective(0) rotateX(0) rotateY(0);
+        /* Safari */
+        transform: perspective(0) rotateX(0) rotateY(0);
+        -webkit-backface-visibility: hidden;
+        backface-visibility: hidden;
+    }
+}
+
+.slick-list {
+    max-width: 800px;
+}
+
+.view-id-content_recent {
+    img {
+        border-radius: 10px;
+    }
+    /*   li:after {
+        content: "";
+        width: 100%;
+        height: 100%;
+        background-color: #00000028;
+        position: absolute;
+        top: 0;
+        left: 50px;
+    }*/
+    li {
+        position: relative;
+        border-radius: 50px;
+    }
+    .views-field-changed {
+        position: absolute;
+        right: 0;
+        top: 0;
+        opacity: 0.6;
+    }
+}
+
+.jcgmt-clockHolder {
+    display: none;
+}

@@ -1,0 +1,31 @@
+<?php
+
+/**
+ * @file
+ * Primary module hooks for Multiple Timezone Clock module.
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+function myclock_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    case 'help.page.myclock':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('Multiple Timezone Clock module provides a block and an admin config. In admin config having multiple clocks settings for different timezone. This module does not depend on any external javascript library or PHP library.') . '</p>';
+      $output .= '<h3>' . t('Configuration') . '</h3>';
+      $output .= '<ol>
+  <li>Install the module "Multiple Timezone Clock".</li>
+  <li>Admin config Url:- admin/config/multiple_timezone_clock</li>
+  <li>Fill value under the select cock country fieldset and click to "Add one more" for adding more clocks settings.</li>
+  <li>Go to the “Block Layout”. Eg:- Admin Menu >> structure >> block layout</li>
+  <li>Go to your block region where you want to put it.</li>
+  <li>Click the "Place block" button and in the modal dialog click the "Place block" button next to "Multiple Timezone Clock".</li>
+  <li>Click on the Save block button.</li>
+</ol>';
+      return $output;
+  }
+}

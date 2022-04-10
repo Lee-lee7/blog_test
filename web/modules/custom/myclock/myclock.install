@@ -1,0 +1,13 @@
+<?php
+
+/**
+ * @file
+ * Uninstall functions for the Multiple Timezone Clock module.
+ */
+
+/**
+ * Implements hook_uninstall().
+ */
+function mtc_clock_uninstall() {
+  \Drupal::configFactory()->getEditable('myclock.settings')->delete();
+}
